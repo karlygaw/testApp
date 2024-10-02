@@ -17,9 +17,10 @@ public class CommentService {
 
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
-    public CommentService(){
-        logger.info("Publisging a comment -  " + comment.getMessage() + 'Author' + comment.getAuthor());
-    }
+
+//    public CommentService(){
+//
+//    }
 
 //    private final NotifyUsers notifyUsers;
 //
@@ -39,6 +40,8 @@ public class CommentService {
 //        System.out.println("Publishing comment - " + comment);
 //        commentRepository.storeComment(comment);
 //        notifyUsers.sendNotification(comment);
+
+        logger.info("Publisging a comment -  " + comment.getMessage() + "Author" + comment.getAuthor());
     }
 
 //    public SingletonTest getSingletonTest() {

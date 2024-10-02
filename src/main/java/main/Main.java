@@ -9,9 +9,16 @@ public class Main {
     public static void main(String[] args){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
+        CommentService commentService = context.getBean(CommentService.class);
 
+        Comment comment = new Comment();
+        comment.setTime(123L);
+        comment.setMessage("Very good");
+        comment.setAuthor("Qarl");
 
-       //CommentService commentService1 = context.getBean(CommentService.class);
+        commentService.publicComment(comment);
+
+        //CommentService commentService1 = context.getBean(CommentService.class);
 //        CommentService commentService2 = context.getBean(CommentService.class);
 //
 //        boolean same = commentService1 == commentService2;
