@@ -34,6 +34,12 @@
             <artifactId>spring-aspects</artifactId>
             <version>5.3.9</version> <!-- или другая необходимая версия -->
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version> <!-- или другая необходимая версия -->
+        </dependency>
+
     </dependencies>
 
 

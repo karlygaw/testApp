@@ -6,6 +6,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.*;
 
 @Configuration
+@EnableAspectJAutoProxy
 @ComponentScan(basePackages = "main")
 public class ProjectConfig {
 // 1й способ добавления в контекст

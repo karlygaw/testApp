@@ -16,7 +16,11 @@ public class Main {
         comment.setMessage("Very good");
         comment.setAuthor("Qarl");
 
-        commentService.publicComment(comment);
+        String result = commentService.publicComment(comment);
+        System.out.println(result);
+        //System.out.println(commentService.getClass());
+        //System.out.println(commentService.getClass());
+        //commentService.publicComment(comment);
 
         //CommentService commentService1 = context.getBean(CommentService.class);
 //        CommentService commentService2 = context.getBean(CommentService.class);

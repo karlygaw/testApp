@@ -36,12 +36,13 @@ public class CommentService {
 //    }
 
 
-    public void publicComment(Comment comment){
+    public String publicComment(Comment comment){
 //        System.out.println("Publishing comment - " + comment);
 //        commentRepository.storeComment(comment);
 //        notifyUsers.sendNotification(comment);
 
         logger.info("Publisging a comment -  " + comment.getMessage() + "Author" + comment.getAuthor());
+        return "Success";
     }
 
 //    public SingletonTest getSingletonTest() {
